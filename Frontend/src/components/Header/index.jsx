@@ -9,10 +9,10 @@ function Header() {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div className="shrink-0">
-              <a href="#" title="" className="flex">
+              <a href="/" title="" className="flex">
                 <img
                   className="w-auto h-9"
-                  src="https://landingfoliocom.imgix.net/store/collection/dusk/images/logo.svg"
+                  src="\public\StaySphere.svg"
                   alt="Logo"
                 />
               </a>
@@ -61,11 +61,11 @@ function Header() {
 
             <nav className="hidden ml-10 mr-auto space-x-10 lg:ml-20 lg:space-x-12 md:flex md:items-center md:justify-start">
               <a
-                href="#"
+                href="/"
                 title=""
                 className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"
               >
-                Products
+                Home
               </a>
               <a
                 href="#"
