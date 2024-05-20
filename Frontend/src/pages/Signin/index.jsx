@@ -5,7 +5,7 @@ function Signin() {
   return (
     <div>
       <Header />
-      <div className="bg-white dark:bg-gray-900">
+      <div className="bg-white dark:bg-zinc-900">
         <div className="flex justify-center h-screen">
           <div
             className="hidden bg-cover lg:block lg:w-2/3"
@@ -14,7 +14,7 @@ function Signin() {
                 "url('https://images.unsplash.com/photo-1616763355603-9755a640a287?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')",
             }}
           >
-            <div className="flex items-center h-full px-20 bg-gray-900 bg-opacity-40">
+            <div className="flex items-center h-full px-20 bg-zinc-800 bg-opacity-40">
               <div>
                 <h2 className="text-2xl font-bold text-white sm:text-3xl">
                   Meraki UI
@@ -49,7 +49,7 @@ function Signin() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block mb-2 text-sm text-gray-600 dark:text-gray-200"
+                      className="block mb-2 text-sm text-zinc-600 dark:text-gray-200"
                     >
                       Email Address
                     </label>
@@ -58,7 +58,7 @@ function Signin() {
                       name="email"
                       id="email"
                       placeholder="example@example.com"
-                      className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-4 py-2 mt-2 text-zinc-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-zinc-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
@@ -66,13 +66,13 @@ function Signin() {
                     <div className="flex justify-between mb-2">
                       <label
                         htmlFor="password"
-                        className="text-sm text-gray-600 dark:text-gray-200"
+                        className="text-sm text-zinc-600 dark:text-gray-200"
                       >
                         Password
                       </label>
                       <a
                         href="#"
-                        className="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline"
+                        className="text-sm text-zinc-400 focus:text-blue-500 hover:text-blue-500 hover:underline"
                       >
                         Forgot password?
                       </a>
@@ -83,21 +83,21 @@ function Signin() {
                       name="password"
                       id="password"
                       placeholder="Your Password"
-                      className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-4 py-2 mt-2 text-zinc-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-zinc-900 dark:text-gray-300 dark:border-gray-700 focus:border-cyan-400 dark:focus:border-cyan-400 focus:ring-cyan-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
                   <div className="mt-6">
                     <button
                       type="submit"
-                      className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+                      className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-300 transform bg-cyan-500 rounded-lg hover:bg-cyan-400 focus:outline-none focus:bg-cyan-400 focus:ring focus:ring-cyan-300 focus:ring-opacity-50"
                     >
                       Sign in
                     </button>
                   </div>
                 </form>
 
-                <p className="mt-6 text-sm text-center text-gray-400">
+                <p className="mt-6 text-sm text-center text-zinc-400">
                   Don&apos;t have an account yet?{" "}
                   <a
                     href="#"

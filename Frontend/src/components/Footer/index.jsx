@@ -23,8 +23,8 @@ function Footer() {
                 </h2>
                 <ul className="text-gray-600 dark:text-gray-400">
                   <li className="mb-4">
-                    <a href="https://flowbite.com" className="hover:underline">
-                      Flowbite
+                    <a href="/" className="hover:underline">
+                      StaySphere
                     </a>
                   </li>
                   <li>
@@ -84,7 +84,7 @@ function Footer() {
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2022{" "}
               <a href="https://flowbite.com" className="hover:underline">
-                Flowbite™
+                StaySphere™
               </a>
               . All Rights Reserved.
             </span>
