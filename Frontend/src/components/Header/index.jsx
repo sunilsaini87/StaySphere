@@ -72,14 +72,14 @@ function Header() {
                 title=""
                 className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"
               >
-                Features
+                About
               </a>
               <a
                 href="#"
                 title=""
                 className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"
               >
-                Pricing
+                Contact
               </a>
               <a
                 href="/signin"
@@ -105,7 +105,7 @@ function Header() {
                 className="relative inline-flex items-center justify-center px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full"
                 role="button"
               >
-                Start free trial
+                Become A Premium Member
               </a>
             </div>
           </div>
