@@ -68,14 +68,14 @@ function Header() {
                 Home
               </a>
               <a
-                href="#"
+                href="/about"
                 title=""
                 className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"
               >
                 About
               </a>
               <a
-                href="#"
+                href="/contact"
                 title=""
                 className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"
               >
