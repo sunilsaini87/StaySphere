@@ -40,7 +40,7 @@ const Register = () => {
   });
 
   return (
-    <form className="flex flex-col gap-5" onSubmit={onSubmit}>
+    <form className="flex flex-col gap-5" onSubmit={onSubmit} aria-label="Register Form">
       <h2 className="text-3xl font-bold">Create an Account</h2>
       <div className="flex flex-col md:flex-row gap-5">
         <label className="text-gray-700 text-sm font-bold flex-1">
@@ -48,7 +48,8 @@ const Register = () => {
           <input
             className="border rounded w-full py-1 px-2 font-normal"
             {...register("firstName", { required: "This field is required" })}
-          ></input>
+            aria-invalid={errors.firstName ? "true" : "false"}
+          />
           {errors.firstName && (
             <span className="text-red-500">{errors.firstName.message}</span>
           )}
@@ -58,7 +59,8 @@ const Register = () => {
           <input
             className="border rounded w-full py-1 px-2 font-normal"
             {...register("lastName", { required: "This field is required" })}
-          ></input>
+            aria-invalid={errors.lastName ? "true" : "false"}
+          />
           {errors.lastName && (
             <span className="text-red-500">{errors.lastName.message}</span>
           )}
@@ -70,7 +72,8 @@ const Register = () => {
           type="email"
           className="border rounded w-full py-1 px-2 font-normal"
           {...register("email", { required: "This field is required" })}
-        ></input>
+          aria-invalid={errors.email ? "true" : "false"}
+        />
         {errors.email && (
           <span className="text-red-500">{errors.email.message}</span>
         )}
@@ -87,7 +90,8 @@ const Register = () => {
               message: "Password must be at least 6 characters",
             },
           })}
-        ></input>
+          aria-invalid={errors.password ? "true" : "false"}
+        />
         {errors.password && (
           <span className="text-red-500">{errors.password.message}</span>
         )}
@@ -102,23 +106,22 @@ const Register = () => {
               if (!val) {
                 return "This field is required";
               } else if (watch("password") !== val) {
-                return "Your passwords do no match";
+                return "Your passwords do not match";
               }
             },
           })}
-        ></input>
+          aria-invalid={errors.confirmPassword ? "true" : "false"}
+        />
         {errors.confirmPassword && (
           <span className="text-red-500">{errors.confirmPassword.message}</span>
         )}
       </label>
-      <span>
-        <button
-          type="submit"
-          className="bg-blue-600 text-white p-2 font-bold hover:bg-blue-500 text-xl"
-        >
-          Create Account
-        </button>
-      </span>
+      <button
+        type="submit"
+        className="bg-blue-600 text-white p-2 font-bold hover:bg-blue-500 text-xl"
+      >
+        Create Account
+      </button>
     </form>
   );
 };
